@@ -1,0 +1,470 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+ 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+ 
+<title>The Versius | Robotics Essay</title>
+<link rel="shortcut icon" href="{Favicon}">
+<link rel="alternate" type="application/rss+xml" href="{RSS}">
+
+<meta name="description" content="{MetaDescription}" />
+ 
+ 
+<meta name="color:Text" content="#bbbbbb"/>
+<meta name="color:Link" content="#aaaaaa"/>
+<meta name="color:Tags" content="#cccccc"/>
+<meta name="color:Hover" content="#f1f1f1"/>
+<meta name="color:Line" content="#f2f2f2"/>
+<meta name="color:title" content="#aaaaaa"/>
+<meta name="color:scrollbarbg" content="ffffff"/>
+ 
+<meta name="image:sidebar" content=""/>
+ 
+ 
+ 
+<style type="text/css">
+ 
+ 
+::-webkit-scrollbar-thumb{ background-color: #ffffff; border: 2px solid #fff; height:auto; }
+ 
+::-webkit-scrollbar { height:8px; width:11px; background-color: #ffffff; border:4.5px solid #fff; }
+
+::selection {
+background: #aaaaaa;
+color: #fff;
+}
+ 
+::-moz-selection {
+background: #aaaaaa;
+color: #fff;
+}
+ 
+::-webkit-selection {
+background: #aaaaaa;
+color: #fff;
+ 
+}
+ 
+ 
+body {
+    background-color:#fcfcfc;
+    margin:0px;
+    color:{color:text};
+    font-family:times;
+    font-size:12px;
+    line-height:100%;
+}
+ 
+a {
+    text-decoration:none;
+    -moz-outline-style:none;
+    color: #151515;
+}
+ 
+img {
+    border:none;
+}
+ 
+ 
+h1 {
+    font-size:20px;
+	font-family: times;
+    text-transform:uppercase;
+    text-align:center;
+	font-weight: normal;
+	letter-spacing:-1px;
+}
+ 
+blockquote {
+    padding-left:5px;
+    border-left:2px solid;
+}
+   
+blockquote blockquote {
+    padding-left:5px;
+    border-left:2px solid;
+}
+ 
+ 
+a:hover {
+    opacity:1;
+    color:{color:hover};
+     -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease
+}
+ 
+ 
+#sidebar {
+    position:fixed;
+    width:220px;
+    margin-left:150px;
+    margin-top:130px;
+    opacity:1;
+}
+ 
+#sidebarimage {
+    width 220px;
+}
+ 
+#sidebarimage img {
+    width:220px;
+    padding:10px;
+    border:1px solid #ddd;
+}
+
+.sidebartitle {
+    position:fixed;
+    font-family:times;
+    background-color:#fcfcfc;
+    font-size:24px;
+    margin-top:-12px;
+    margin-left:20px;
+    letter-spacing:-1px;
+    text-align:left;
+    font-style:italic;
+    padding:6px;
+    width:160px;
+    z-index:99999;
+}
+
+.sidebartitle a {
+    color: #151515;
+}
+
+.sidebartitle a:hover {
+    color: #aaaaaa;
+}
+ 
+ 
+.desc {
+    position:fixed;
+    margin-top:24px;
+    margin-left:1px;
+    font-family:times;
+    line-height:110%;
+    font-size:11px;
+    width:220px;
+    padding:9px;
+    text-align:justify;
+    color:#151515;
+}
+   
+.desc a
+    {color:#151515;
+    -moz-transition-duration:0.6s;
+    -webkit-transition-duration:0.6s;
+    -o-transition-duration:0.6s;
+}
+ 
+ 
+.links {
+    margin-top:6px;
+    margin-left:0px;
+    width:220px;
+    padding: 9px;
+    word-spacing:5px;
+    font-family:times;
+    text-align:center;
+    text-transform:uppercase;
+}
+ 
+.links a {
+    font-size: 9px;
+}
+ 
+.links a:hover {
+   color: #aaaaaa;
+}  
+ 
+ 
+#pagi{
+    width:130px;
+    font-size:8px;
+    text-align:center;
+    margin-left:55px;
+    margin-top:80px;
+    position:fixed;
+    font-family:times;
+    letter-spacing:2px;
+}
+ 
+ 
+#all {
+    padding:10px;
+    width:400px;
+    margin-left:450px;
+    margin-top:10px;
+    font-size:12px;
+	font-family: Helvetica, sans-serif;
+    padding-bottom:50px;
+    }
+ 
+ 
+ 
+#posts {
+    width:400px;
+    padding-bottom:50px;
+    padding:5px;
+    margin-top:70px;
+    background-color:{color:Post};
+}
+ 
+ 
+#details {
+    text-align:center;
+    margin-top:8px;
+    text-transform:uppercase;
+    font-size:8px;
+    font-style:none;
+    border-top:1px solid {color:Line};
+}
+ 
+ 
+#tags {
+    font-family:times;
+    letter-spacing:0px;
+    text-transform:lowercase;
+    font-size:9px;
+    font-style:italic;
+    margin-top:5px;
+    text-align:center;
+    opacity:0;
+    -webkit-transition: all 0.6s ease-in-out;
+    -moz-transition: all 0.6s ease-in-out;
+    -o-transition: all 0.6s ease-in-out;
+    -ms-transition: all 0.6s ease-in-out;
+    -transition: all 0.6s ease-in-out;
+}
+   
+#tags a {
+    display:inline-block;
+    padding:-3px;
+    text-align:right;
+    color:{color:Tags};
+    }  
+    
+#posts:hover #tags {
+    opacity:1;
+    -webkit-transition: all 0.6s ease-in-out;
+    -moz-transition: all 0.6s ease-in-out;
+    -o-transition: all 0.6s ease-in-out;
+    -ms-transition: all 0.6s ease-in-out;
+    -transition: all 0.6s ease-in-out;
+}
+ 
+ 
+    #question {
+        padding:12px;
+        padding-bottom:20px;
+        font-family:times;
+        letter-spacing:2px;
+        line-height:120%;
+        text-align:center;
+        text-transform:uppercase;
+        font-size:9px;
+        color:{color:text};
+        border-bottom:1px solid #eee;
+        border-right:1px solid #eee;
+        background-color:{color:background}
+    }
+ 
+
+
+.newplayerbutton {
+                    position: relative;
+                    width: 28px;
+                    height: 27px;
+                    overflow: hidden;
+                    background-color: #ccc;
+                }
+               
+                .playerbuttonhug {
+                    position: absolute;
+                    top: -11px;
+                    left: -12px;
+                }
+     
+     
+                .tumblr_audio_player {
+                    border: none;
+                    padding: 0px;
+                    margin: 0px;
+                    height: 50px;
+                    width: 400px;
+                    background-color: #ccc;
+                }
+     
+                .playerbuttonbg {
+                    position: absolute;
+                    left: 20px;
+                    top: 20px;
+                    width: 28px;
+                    height: 28px;
+                    background-color: white;
+                    padding: 10px;
+                    -webkit-border-radius: 40px;
+                    -moz-border-radius: 40px;
+                    border-radius: 40px;
+                    opacity: .4;
+                    filter: alpha(opacity=40);
+                    -moz-opacity: 0.4;
+                     -khtml-opacity: 0.4;
+                    transition: opacity .7s ease-in-out;
+                    -moz-transition: opacity .7s ease-in-out;
+                    -webkit-transition: opacity .7s ease-in-out;
+                }
+               
+                .playerbuttonbg:hover {
+                    opacity: 1;
+                        filter: alpha(opacity=100);
+                        -moz-opacity: 1;
+                        -khtml-opacity: 1;
+                }
+     
+                .audioimgwrapper {
+                    position: absolute;
+                    left: 0px;
+                    top: 0px;
+                    -webkit-border-radius: 50px;
+                    -moz-border-radius: 50px;
+                    border-radius: 50px;                
+                    overflow: hidden;
+                    width: 88px;
+                    height: 88px;
+                }
+               
+                .audioimgwrapper img {
+                    width: 100%;
+                    height: auto;      
+                    -webkit-border-radius: 50px;
+                    -moz-border-radius: 50px;
+                    border-radius: 50px;                
+                }
+               
+                .trackdetails {
+                    width: auto;
+                    display:inline-block;
+                    margin-left: 100px;
+                    min-height: 85px;
+                }
+               
+                .audiowrapper {
+                    position: relative;
+                    display:inline-block;
+                }
+                
+        #quote {
+            font-size:18px;
+            letter-spacing:-1px;
+            line-height:100%;
+        }
+        
+        #quotesource {
+            font-size:9px;
+            text-align:right;
+        }
+		
+		#credit	{
+			font-size: 9px;
+		}
+ 
+ 
+
+
+    
+    
+</style>
+ <script type="text/javascript" src="http://static.tumblr.com/bmdsqsc/8mXm7q8vn/jquery.js"></script>
+<script type="text/javascript" src="http://static.tumblr.com/bmdsqsc/ogWm7q8w1/lazyload.js"></script>
+<script type="text/javascript" charset="utf-8">
+var $j = jQuery.noConflict();
+$j(function() {
+if (navigator.platform == "iPad" || navigator.platform == "iPhone") return;
+$j("img").lazyload({
+placeholder : "http://static.tumblr.com/twte3d7/RSvlio0k5/grey.gif",
+effect: "fadeIn",
+});
+});
+</script>   
+    
+    
+</head><body>
+ 
+<div id="sidebar">
+<div class="sidebartitle"> <a href="/">Joanne Reilly</a> </div>
+<div id="sidebarimage"><img src="https://avatars0.githubusercontent.com/u/37181728?s=460&v=4"></div>
+<div class="desc">
+BSc in Computer Science student at University College Dublin | UCD Cothrom na Féinne Scholar | PATH Community Mentor<br>
+
+
+</div>
+<div class="links">
+
+<a href="https://www.linkedin.com/in/joreillyie/">LinkedIn</a>
+
+<a href="https://github.com/joreillyIE">GitHub</a>
+
+</div>
+<div id="pagi">
+<a href="{PreviousPage}">&larr;</a>&nbsp;&nbsp;
+
+<span class="current_page"></span>&nbsp;&nbsp;
+<a class="jump_page" href="{URL}"></a>&nbsp;&nbsp;
+
+<a href="{NextPage}">&rarr;</a>
+</div>
+ 
+</div>
+ 
+<div id="all"><div id="posts">
+
+<h1>The Versius</h1>
+The Versius is a next-generation robotic minimal access system. It was created by UK based med-tech company CMR Surgical and is currently said to be the world’s smallest surgical robot. It was designed to assist surgeons when performing keyhole surgery and will be used to operate on patients for the first time this year. This portable robotic system is quick and easy to set up, can be placed anywhere to suit workflow and intended to be an affordable solution for hospitals that cannot obtain existing systems due to budget limitations.
+<br><br>
+<img src="Versius-1.jpg" width="400"><br>
+<div id="credit">credit: cmr surgical</div>
+<br><br>The systems’ software and hardware are designed and built in Cambridge, UK. Versius is made up of a surgeon console and five lightweight robotic arms. These modular arms are independent of the console. Each is individually mounted on their own carts and can be installed with one of any available surgical instruments. Its modular system allows the arms to be placed in any position around the operating system and for arms to be added or removed for each procedure. Each control unit weighs about 800 kg while each robotic arm is less than 15kg with a 38x38cm footprint. These come with a camera or any of a range of wristed 5mm surgical tools to attach. The wheels attached allow for easy mobility between operating rooms. CMR have used newer materials and technologies that did not exist twenty years ago when the first surgical robot of its kind was created. 
+<br><br>All robotic arms are controlled by a surgeon at a console. Surgeons can sit or stand, and the console can be raised or lowered accordingly. The surgeon uses a controller with two joysticks, similar to those used for gaming, and views a visualization from within the body on a 3D high-definition screen with the 3D glasses provided. Haptic feedback is fed to the controller, allowing the user to feel the anatomy being worked on as well a comfortable visual for an intuitive experience. The console finally includes a data analysis feature. Data is stored after each operation and the information recorded about how the robot has been used can be analyzed, compared and fed back to surgeons to refine their abilities.
+<br><br>The robotic arms contain intelligence and sensing capabilities needed to accurately move themselves in response to a surgeon’s command, while also responding to the touch of the assisting surgical staff. Each arm has very flexible joints to imitate that of a surgeon and are designed to mimic the mechanics of the human arm in a way that industrial arms today do not. Industrial arms typically have six degrees of freedom while Versius can boast seven by adding extra joints in the arms and wrists. This is because keyhole surgery requires precision and accuracy, and also makes the device more intuitive to use for a surgeon while operating. These arms can self-monitor their position, and the force they apply 5,000 times per second to achieve such a level of precision.
+<br><br>The artificial intelligence in Versius is very minimal. Versius works on a slave system as it requires a surgeon to operate it, as do most surgical robots. It converts surgeon movements into instrument movements using software between remote robot arms, and a physician’s console. Artificial intelligence is however being developed to passively help the surgeon, while still leaving all decisions to be made by them. Automation is currently aimed at smoothing out hand tremors or marking out “no fly zones” to prevent a surgeon touching or damaging nearby nerves, vasculature, or organs. A robot such as this can employ weak AI that guides the surgeon without forcing their hand. However, it will be a number of years before we see an AI perform surgery itself.
+<br><br>Versius can be applied to a wide range of medical procedures in any hospital across the globe. It utilizes laparoscopic or keyhole surgery, which is a minimally invasive technique carried out with special instruments using very small incisions. This type of surgery is preferred over conventional surgeries as patients can expect reduced pain, less trauma, faster recovery and a shorter hospital stay. However, the techniques involved require years of training and even still the procedures remain difficult to perform. For this reason, many hospitals can only perform a limited number of laparoscopic procedures. 
+<br><br><div id="quote">"It takes around 80 hours to teach suturing with manual laparoscopic tools and some surgeons find it impossible to master. By contrast, it takes half an hour to teach using Versius - this will enable many more surgeons to deliver the benefits of keyhole surgery."</div><div id="quotesource">- Mark Slack, co-founder of CMR Surgical and former Addenbrooke’s Hospital surgeon.</div>
+<br><br>Robots have the vital accuracy, stamina, and steadiness which surgeons require to do so. It will make keyhole procedures more accessible to patients by reducing the fatigue of surgeons, possibly extending the amount of time they can operate from two hours a day to eight. Used by medical schools, this technology can also be used in teaching surgeons. Versius could also extend the working careers of aging surgeons who otherwise may not my physically able to stand for long hours or hold tools steady enough to operate. Overall this will increase the availability of qualified surgeons, making treatment more accessible to people and increasing the productivity of hospitals.
+<br><br>Surgical robotics is not new technology and similar robots have been available for the past twenty years. Versius was made to rival the American Da Vinci system by Intuitive Surgical, a California-based company with over 4500 units of their robot in hospitals world-wide. It is mainly used for prostate, bladder and gynaecological surgeries but the company plan to expand that list. It is a 750kg unit that allows the surgeon to sit down to watch the surgery through a scope and control the moving frameworks attached to the machine which have operating instruments attached. Its structure is very similar to Versius, however all robotic arms are attached to a singular central pillar. According to Prokar Dasgupta, Professor of Urology at King’s College London, “The surgeon could be comfortably seated and that completely changed the way we perform surgery. The da Vinci has been largely a success story.”
+<br><br>When first becoming available in 2000, the Da Vinci system revolutionized the med-tech industry. However, key patents for the robot have expired in the last few years and this has prompted other companies to take advantage and enter the field of surgical robotics. Alphabet joined forces with Johnson & Johnson to create a surgical robotics start-up in 2015 called Verb Surgical. Their aim is to connect their robots to each other over the internet so that they can learn from each other. They aim to launch their first robot in 2020. Medtronic also recently released their robotic spinal surgery system, Mazor X. Mazor X features a robotic guidance system for spinal surgery in addition to Medtronic's navigation and 3D imaging technologies.
+<br><br>CMR was first established in response to the market need for a surgical robot that is far more adaptable than those currently available and can be afforded at a much lower price. Their system was designed with the obstacles of widespread adoption of robotic MAS in mind. This includes size of the robot, instrument size, versatility, port placement, complexity, and ease of use. Overcoming these barriers allows the system to be highly utilised and cost-comparable to manual keyhole surgery. Versius is smaller than any existing surgical robot and with its modular design, it satisfies the need for portability. There is no price yet for Versius but CMR have said that they aim to make it more cost effective than the Da Vinci which is currently approximately $2 million.
+<br><br>When Mark Slack was originally approached by Luke Hares, another co-founder of CMR, with the idea of a surgical robot, he believed there would be no market need for a device to assist him in performing operations. However, he realized its usefulness when asked where the hardest part of being a surgeon comes from: physical fatigue. Surgeons, on average, are required to work on a patient for over an hour and this can be much longer for major surgeries. Versius was then designed to be an ergonomic tool for surgeons to tire less easily and operate on more patients but there is a larger market need for surgical robots in training surgeons.
+<br><br><div id="quote">"We’ll see the man/machine barrier changing, eventually you’ll get to the point where the surgeon can say ‘put a stitch in here please’. But we’re right at the beginning of that journey."</div><div id="quotesource">— Luke Hares, technology director at CMR Surgical</div>
+
+<br><br>Intuitive Surgical currently sells approximately 400 systems a year and with newer companies coming out of the woodwork with more sophisticated solutions, the existing market for surgical robotics is expected to grow five times that over the course of the next 10 years. Annual revenue from robot-assisted surgery will rise to $20 billion by 2025. CMR plans to develop other robotic solutions for medicine in the future, although launching Versius is their current priority as they aim to have a robot in every major hospital. Versius recently received a European health and safety approval mark and hope to get FDA approval soon. It will be exciting to watch the growth of this industry, and see technology advance. While we are not there yet, there is no denying that Versius and systems like it are paving the way for robots to potentially operate on human bodies in a completely autonomous way.
+
+<br><br><br><br>Essay by Joanne Reilly<br>
+27 April 2019
+<br><br><br><br>
+
+References:<br><br>
+<div id="credit">
+BBC News. (2019). New robot surgery system coming to NHS. [online] Available at: https://www.bbc.com/news/health-45370642 [Accessed 4 May 2019].
+<br>
+Devlin, H. (2019). The robots helping NHS surgeons perform better, faster – and for longer. [online] the Guardian. Available at: https://www.theguardian.com/society/2018/jul/04/robots-nhs-surgeons-keyhole-surgery-versius [Accessed 4 May 2019].
+<br>
+Leprince-Ringuet, D. (2019). Meet Versius, the surgical robot about to take aim at your organs. [online] Wired.co.uk. Available at: https://www.wired.co.uk/article/surgical-robot-uk-versius [Accessed 4 May 2019].
+<br>
+Macaulay, T. (2019). Could the 'world's smallest surgical robot' make keyhole surgery mainstream?. [online] Techworld. Available at: https://www.techworld.com/startups/could-worlds-smallest-surgical-robot-make-keyhole-surgery-mainstream-3668452/ [Accessed 4 May 2019].
+</div>
+
+
+
+
+ 
+</div>
+
+</div>
+</div>
+</div>
+ 
+ 
+ 
+   
+</body></html>
